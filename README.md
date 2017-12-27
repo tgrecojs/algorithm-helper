@@ -11,16 +11,61 @@
 Notes on code &amp; the different factors that effect code performance
 
 #### Checklist
-[ ] Flow control
-[ ] sorting algorithms
+
+[] Flow control
+[ ] * sorting algorithms
 [ ] decrease & conquer
 [ ] divide & conquer
 [ ] psuedo code
 
-### Algorithms
-* **In place**
-    * Google way to save space -> in-place algorithms will generally have 0(1) space cost
-    * **CAN CAUSE SIDE EFFECTS** -> your input is altered (destroyed) which can affect code outside the fn.
+- [x] Flow control
+- [ ] this is an incomplete item
+- [ ] 
+- [x] @mentions, #refs, [links](),
+**formatting**, and <del>tags</del>
+supported
+- [x] list syntax required (any
+
+### Classifying Sorting Algorithms
+#### Space Complexity | Memory Usage
+   * **In place Algorithms:**
+     * Operate directly on inputted data, which means that we’re effectively destroying the original data set.
+     * More space-effecienct because the algorithm only needs a little extra space in memory, O(1)
+   * **Out of place**
+     * Don’t operate directly on dataset -> makes a copy and performs sorting to copy.
+     * Safer, but the memory usage of this algorithm grows with input size.
+    
+#### Stability
+   * **unstable** algorithm is one where there is no guarantee that, if two items are found to have the same sort key, that their relative order will be preserved.
+   * **stable algorithm is one that preserves the relative order of the elements**; if the keys are the same, we can guarantee that the elements will be ordered in the same way in the list as they appeared before they were sorted
+#### Internal vs. External
+   * **Internal**
+     * All calculations can be done with main, internal memort
+   * **External**
+      * Records stored externally in memory.
+      * Ex. `mergeSort` merge fm. -> sorts data in outside fn. 
+
+   
+
+Quadratic     | Linear           | 
+--------------| -----------------|
+  O(n^2)      |  O(n)            |
+
+
+
+
+
+Algorithm Name| Time complexity  |  Space Complexity | Interal/External | Recursive | Comparison Sort ? |
+--------------| -----------------|------------------ |------------------|-----------|-------------------| 
+Bubble  Sort |     quadratic     |  
+Content column 1 | Content column 2
+
+
+
+
+#### [Selection Sort](#selection-sort)
+A selection sort algorithm sorts through a list of items by iterating through a list of elements, finding the smallest one, and putting it aside into a sorted list. It continues to sort by finding the smallest unsorted element, and adding it to the sorted list.
+
 
 
 ### Flow Control
