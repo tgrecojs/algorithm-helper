@@ -38,30 +38,43 @@ supported
      * Don’t operate directly on dataset -> makes a copy and performs sorting to copy.
      * Safer, but the memory usage of this algorithm grows with input size.
     
-#### Stability
-   * **unstable** algorithm is one where there is no guarantee that, if two items are found to have the same sort key, that their relative order will be preserved.
-   * **stable algorithm is one that preserves the relative order of the elements**; if the keys are the same, we can guarantee that the elements will be ordered in the same way in the list as they appeared before they were sorted
+#### Stability - (dealing with same key)
+   * **unstable algorithm**
+      * is one where there is no guarantee that, if two items are found to have the same sort key, that their relative order will be             preserved.
+   * **stable algorithm** 
+      * one that preserves the relative order of the elements**; if the keys are the same, we can guarantee that the elements will be ordered in the same way in the list as they appeared before they were sorted
 #### Internal vs. External
    * **Internal**
      * All calculations can be done with main, internal memort
    * **External**
       * Records stored externally in memory.
       * Ex. `mergeSort` merge fm. -> sorts data in outside fn. 
+#### Comparison 
+   * Is the algorithm using any comparison operators (`<=>`)?
+   * If yes, it's a comparison sort algorithm
+   * Ex. Bubble, Insertion, Selection
+  
+   
 
    
 
-Quadratic     | Linear           | 
---------------| -----------------|
-  O(n^2)      |  O(n)            |
-
-
+| Input | Common Examples |
+|---|---|
+|Constant: O(1)| Array access, arithmetic operators|
+|Logarithmic: O(log(N))| Binary search, binary search tree retrieval/insertion (balanced)|
+|Linear: O(N)| Looping through an array or hashtable| 
+|Quasilinear: O(Nlog(N))| Quicksort, mergesort, heapsort| 
+|Quadratic: O(N^2)| Nested loops | 
+|Polynomial: O(N^C)| Deeply nested loops|
+|Exponential: O(C^N)| Multiple-recursion | 
+|Factorial: O(!N)| Permutations |
 
 
 
 Algorithm Name| Time complexity  |  Space Complexity | Interal/External | Recursive | Comparison Sort ? |
 --------------| -----------------|------------------ |------------------|-----------|-------------------| 
-Bubble  Sort |     quadratic     |  
-Content column 1 | Content column 2
+Bubble  Sort |     quadratic|   in-place| internal | No | 
+Content column 1 | Content column 2 | in place
 
 
 
