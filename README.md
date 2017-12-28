@@ -2,7 +2,6 @@
 * Todo -> **Organize && Create Table of contents**
 
 
-
 ### Intervew Cake
 * in-place
     * An in-place algorithm operates directly on its input and changes it, instead of creating and returning a new object
@@ -56,8 +55,7 @@ supported
   
    
 
-   
-
+#### Time Complexity Table
 | Input | Common Examples |
 |---|---|
 |Constant: O(1)| Array access, arithmetic operators|
@@ -69,8 +67,7 @@ supported
 |Exponential: O(C^N)| Multiple-recursion | 
 |Factorial: O(!N)| Permutations |
 
-
-
+## (Some) Soritng Algorithm tables
 Algorithm Name| Time complexity  |  Space Complexity | Interal/External | Recursive | Comparison Sort ? |
 --------------| -----------------|------------------ |------------------|-----------|-------------------| 
 Bubble  Sort |     quadratic|   in-place| internal | No | 
